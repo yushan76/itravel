@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itravel</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        
+        .about{
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+        .about .wrap{
+            width: 950px;
+            display: flex;
+            margin: auto;
+            margin-left: 330px;
+        }
+
+        .about .item{
+            width: 283px;
+            height: 424px;;
+            margin: auto;
+            display: block;
+            position: relative;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            -webkit-box-shadow: 0px 0px 5px 1px rgba(189,185,185,.25);
+            -moz-box-shadow: 0px 0px 5px 1px rgba(189,185,185,.25);
+            box-shadow: 0px 0px 5px 1px rgba(189,185,185,.25);
+            -webkit-transition: all .3s;
+            transition: all .3s;
+
+        }
+        
+       .about img{
+           width: 287.5px;
+           height: 250px;
+           margin-bottom: 10px;
+       }
+
+       .atxt {
+            color: #2B3245;
+            font: "Arial" ;
+            font-size: 18px;
+            font-weight:bold;
+            margin-bottom: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        
+        .about .btxt {
+            color: #666666;
+            font: "Arial" ;
+            font-size: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+            
+        }
+
+        .sever .btxt{
+            color: #666666;
+            font: "Arial" ;
+            font-size: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 25px;
+        }
+
+       .sever{
+            width: 1903px;
+            height: 464px;
+            margin-bottom: 30px;
+            background-color:#EDEDED;
+       }
+
+        .sever .wrap {
+            width: 1260px;
+            display: flex;
+            margin: auto;
+            margin-left: 330px;
+        }
+
+       .sever .item{
+            width: 400px;
+            margin: auto;
+            display: block;
+            position: relative;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            -webkit-box-shadow: 0px 0px 5px 1px rgba(189,185,185,.25);
+            -moz-box-shadow: 0px 0px 5px 1px rgba(189,185,185,.25);
+            box-shadow: 0px 0px 5px 1px rgba(189,185,185,.25);
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            margin-bottom: 35px;
+            margin-top: 20px;
+        } 
+
+        .sever img{
+            margin-bottom: 10px;
+            width: 393.33px;
+            height: 184px;
+       }
+
+       .sever .Travel {
+            font: "Arial" ;
+            font-size: 32px;
+            margin-left: 330px;
+            font-weight:bold;
+       }
+
+       .txt {
+            margin-top: 30px;
+            margin-bottom: 30px;
+       }
+
+       .txt .wrap {
+            width: 850px;
+            display: flex;
+            margin: auto;
+            margin-left: 604px;
+       }
+
+       .txt .wrap .item{
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            display: block;
+       }
+
+       .txt .atxt{
+            font: "Arial" ;
+            font-size: 16px;
+            margin-bottom: 38px;
+            font-weight:bold;
+            margin-left: 0px;
+       }
+
+
+       .txt .call{
+           border-left:4px green solid ;
+           margin-bottom: 37px;
+       }
+
+       .txt .email{
+        border-left:4px red solid ;
+        margin-bottom: 37px;
+       }
+
+       .txt .follow{
+        border-left:4px orange solid ;
+        margin-bottom: 37px;
+       }
+
+       .txt .btxt{
+            color: #666666;
+            font: "Arial" ;
+            font-size: 16px;
+            margin-left: 18px;
+            margin-bottom: 10px;
+       }
+
+       .txt .ctxt{
+            font: "Arial" ;
+            font-size: 15px;
+            margin-left: 18px;
+            font-weight:bold;
+       }
+
+       .txt .dtxt{
+            color: #666666;
+       }
+
+
+       .txt img{
+           width: 15px;
+           height: 15px;
+           margin-right: 5px;
+       }
+
+       .itravel{
+            display: flex;
+            width: 1500px;          
+       }
+
+       .itravel .atxt{
+            margin-left: 587px;
+            margin-bottom: 30px;
+            color: #666666;
+            font-size: 13px;
+            width: 500px;          
+
+     
+       }
+
+       .itravel .btxt{
+            margin-left: px;
+            margin-bottom: 30px;
+            color: #666666;
+            font-size: 13px;
+            margin-left: 204px;
+            width: 800px;          
+
+       }
+
+       .t111 img{
+            position: relative;
+            vertical-align: middle;
+       }
+
+       .serach{
+           position: absolute;
+           z-index: 1;
+           top: 330px;
+           left: 595px;
+           overflow: hidden;
+       }
+
+       .www{
+            position: relative;
+            overflow: hidden;
+            width: 720px;
+            vertical-align: middle;
+            white-space: nowrap;
+       }
+
+       .www input#text{
+        width: 300px;
+        height: 50px;
+        background: #2b303b;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        color: #fff;
+        padding-left: 15px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        }
+       .www .icon {
+           position: absolute;
+           z-index: 1;
+           top: 0px;
+           font-size: 20px;
+           left: 670px;
+           width: 50px;
+           height: 42px;
+           text-align: center;
+           line-height: 42px;
+           
+       }
+    </style>
+</head>
+<body>
+    <div style="height:60px;width:30%;float:left;">
+    <font face="Arial" size="7"><B> &emsp; &emsp; &emsp;itravel</B></font>
+    </div>
+    <div style="height:60px;width:70%;float:left;line-height:60px;">
+    <font face="Arial" size="3" >HOME &emsp; FIND AN AGENT &emsp; HOT DEAL
+        S &emsp; TOURS &emsp; CRUISES &emsp; BLOG &emsp; MEDLA &emsp; WORK WITH US &emsp; CONTACT US  </font>
+    </div>
+
+    <p style="line-height:5%"><br></p>
+
+    <div class="t111">
+        <img src="01.jpg" alt="">
+    </div>
+
+    <div class="serach">
+        <div class="www">
+            <center><input placeholder="Where to next?" input type="text" style="padding:8px; font-size:20px; width:700px ;">
+            </center>
+            <span class="icon"><i class="fa fa-search"></i></span>
+        </div>
+        
+    </div>    
+        <div class="about">
+            <div class="wrap">
+                <div class="item">
+                    <div class="aimg"><img src="02.jpg" alt=""></div>
+                        <div class="atxt">
+                            <p>KINGS &ensp;CANYON&ensp;GLAMPING&ensp;&&ensp;RESORT&ensp;RETREAT</p></div>
+                        <div class="btxt">
+                            <P>NT &ensp;SUMMER&ensp;SALE&ensp;As&ensp;Australia&ensp;starts&ensp;to...<br>
+                            5&ensp;DAYS&ensp;From&ensp;
+                            <font color="RED"> <span style="font-weight:bold;">AUD&ensp;$1,075pp*</span></font></p></div>
+                </div>
+                <div class="item">
+                    <div class="aimg"><img src="03.jpg" alt=""></div>
+                    <div class="atxt">
+                        <p>REDISCOVER&ensp;NORTHERN&ensp;TERRITORY&ensp;RED&ensp;CENTRE ADVENTURE</p></div>
+                    <div class="btxt">
+                        <P>EXPERIENCE&ensp;A&ensp;SUNRISE&ensp;YOU’VE&ensp;NEVER&ensp;FELT&ensp;BEFORE!....<br>
+                            4&ensp;DAYS&ensp;From &ensp;
+                            <font color="RED"> <span style="font-weight:bold;">AUD&ensp;$1066*</span></font></p></div>
+                </div>
+                <div class="item">
+                    <div class="aimg"><img src="04.jpg" alt=""></div>
+                    <div class="atxt">
+                        <p>DISCOVER&ensp;THE&ensp;AMAZING&ensp;WONDERS&ensp;OF&ensp;ANTARCTICA&ensp;IN&ensp;2021!</p></div>
+                    <div class="btxt">   
+                        <P>GET&ensp;READY&ensp;FOR&ensp;THE&ensp;COOLEST&ensp;ADVENTURE&ensp;OF...<br>
+                            12&ensp;DAYS&ensp;From&ensp;
+                            <font color="RED"> <span style="font-weight:bold;">AUD&ensp;$11,995 </span> </font>
+                        </p></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="sever">
+            <br><br><br><br><div class="Travel" ><p>Travel Inspiration </p> </div>
+            <div class="wrap">
+                <div class="item">
+                    <div class="simg"><img src="05.jpg"></div>
+                    <div class="atxt">
+                        <p>AYRES&ensp;ROCK/ULURU-June&ensp;2019</p></div>
+                    <div class="btxt">      
+                        <p>My&ensp;Uluru&ensp;List&ensp;Experence.&ensp;Something&ensp;that&ensp;should&ensp;be&ensp;on&ensp;the&ensp;top&ensp;of&ensp;one’s&ensp;list...</p> </div>
+                </div>
+                <div class="item">
+                    <div class="simg"><img src="06.jpg"></div>
+                    <div class="atxt">
+                        <p>MALDIVES - July&ensp;2019</p></div>
+                    <div class="btxt">     
+                        <p>I&ensp;couldn’t&ensp;think&ensp;of&ensp;the&ensp;most&ensp;perfect&ensp;location&ensp;to&ensp;celebrate&ensp;my&ensp;25th&ensp;Wedding&ensp;Anniversary&ensp;than...</p></div>
+                </div>
+                <div class="item">
+                    <div class="simg"><img src="07.jpg"></div>
+                    <div class="atxt">
+                        <p>TRAVEL&ensp;AND&ensp;CORONAVIRUS</p></div>
+                    <div class="btxt">     
+                        <p>Coronavirus&ensp;(COVID-19)&ensp;At&ensp;itravel&ensp;We&ensp;recognise&ensp;that&ensp;this&ensp;is&ensp;a&ensp;worrying&ensp;time&ensp;for&ensp;our&ensp;customers....</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="txt">
+            <div class="wrap">
+                <div class="item">
+                    <div class="atxt">
+                        <p>NEED&ensp;HELP&ensp;?</p>  </div>
+                    <div class="call">
+                        <div class="btxt">Call </div>
+                        <div class="ctxt">1300&ensp;28&ensp;00&ensp;28 </div>
+                    </div>
+                    <div class="email">
+                        <div class="btxt" > Email </div>
+                        <div class="ctxt"> sales@itravel-au.com </div>
+                    </div>
+                    <div class="follow">
+                        <div class="btxt"> Follow </div>
+                        <div class="ctxt"><img src="08.jpg" alt=""><img src="09.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="atxt">ADDRESS</div>
+                    <div class="dtxt">
+                        Suite&ensp;110,&ensp;Level&ensp;1<br><br>410&ensp;Elizabeth&ensp;Street<br><br>Surry&ensp;Hills&ensp;NSW&ensp;2010<br><br>Australia</div>
+                </div>
+                <div class="item">
+                    <div class="atxt">ABOUT&ensp;US</div>
+                    <div class="dtxt">
+                    Who&ensp;We&ensp;Are<br><br>Terms&ensp;&&ensp;Conditions<br><br>Complaints&ensp;Policy<br><br>Privacy&ensp;Policy </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="itravel">
+            <div class="atxt"> ©&ensp;1995-2021&ensp;itravel</div>
+            <div class="btxt">ATAS | AFTA | IATA | CLIA | HQ&ensp;by&ensp;itravel</div>
+        </div>
+</body>
+</html> 
